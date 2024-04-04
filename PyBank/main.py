@@ -31,18 +31,18 @@ with open (bank_csv, encoding='utf-8') as csv_file:
         
         previous_profit_loss = int(row[1])
 
-# Calculate average change
+# Calculate AVERAGE CHANGE
 average_change = sum(profit_losses_changes[1:]) / (total_months - 1)
 
-# Find the greatest increase and decrease in profits
+# Find the GREATEST INCREASE and DECREASE in PROFITS
 greatest_increase = max(profit_losses_changes)
 greatest_decrease = min(profit_losses_changes)
 
-# Get the corresponding dates for the greatest increase and decrease
+# Get the corresponding dates for the GREATEST INCREASE and DECREASE
 increase_date = dates[profit_losses_changes.index(greatest_increase)]
 decrease_date = dates[profit_losses_changes.index(greatest_decrease)]
 
-# Print the analysis results to the terminal
+# Print the ANALYSIS RESULTS to the TERMINAL
 print("Financial Analysis")
 print("----------------------------")
 print(f"Total Months: {total_months}")
@@ -51,7 +51,7 @@ print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {increase_date} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {decrease_date} (${greatest_decrease})")
 
-# Export the results to a text file
+# Export the RESULTS to a TEXT FILE (.txt)
 with open('analysis/financial_analysis.txt', 'w') as output_file:
     output_file.write("Financial Analysis\n")
     output_file.write("----------------------------\n")
