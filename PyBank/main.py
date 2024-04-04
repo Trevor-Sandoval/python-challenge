@@ -58,5 +58,5 @@ with open('analysis/financial_analysis.txt', 'w') as output_file:
     output_file.write(f"Total Months: {total_months}\n")
     output_file.write(f"Total: ${total_profit_losses}\n")
     output_file.write(f"Average Change: ${average_change:.2f}\n")
-    output_file.write(f"Greatest Increase in Profits: (${greatest_increase})\n {increase_date}")
-    output_file.write(f"Greatest Decrease in Profits: (${greatest_decrease})\n {decrease_date}")
+    output_file.write(f"Greatest Increase in Profits: {increase_date} (${greatest_increase})\n")
+    output_file.write(f"Greatest Decrease in Profits: {decrease_date} (${greatest_decrease})\n")
