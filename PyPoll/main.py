@@ -7,19 +7,18 @@ poll_csv = os.path.join("Resources","election_data.csv")
 # Path to the CSV file
 file_path = os.path.join("election_data.csv")
 
-# Initialize variables
+# INITIALIZE variables
 total_votes = 0
 candidate_votes = {}
 
 # Read the CSV file
 with open (poll_csv, encoding='utf-8') as csv_file:
     csv_read = csv.reader(csv_file, delimiter=",")
-
     
-    # Skip the header row
+    # SKIP the header row
     next(csv_read, None)
     
-    # Calculate total votes and candidate votes
+    # Calculate TOTAL VOTES and CANDIDATE VOTES
     for row in csv_read:
         total_votes += 1
         candidate = row[2]
@@ -28,13 +27,13 @@ with open (poll_csv, encoding='utf-8') as csv_file:
         else:
             candidate_votes[candidate] = 1
 
-# Calculate the percentage of votes each candidate won
+# Calculate the PERCENTAGE OF VOTES each candidate won
 candidate_percentages = {candidate: (votes / total_votes) * 100 for candidate, votes in candidate_votes.items()}
 
-# Find the winner based on popular vote
+# Find the winner based on POPULAR VOTES
 winner = max(candidate_votes, key=candidate_votes.get)
 
-# Print the analysis results
+# Print the ANALYSIS RESULTS
 print("Election Results")
 print("-------------------------")
 print(f"Total Votes: {total_votes}")
@@ -45,7 +44,7 @@ print("-------------------------")
 print(f"Winner: {winner}")
 print("-------------------------")
 
-# Write the analysis results to a text file
+# Write the analysis results to a text file (.txt)
 output_file = "analysis/election_results.txt"
 with open(output_file, 'w') as output:
     output.write("Election Results\n")
