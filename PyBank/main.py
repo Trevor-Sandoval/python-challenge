@@ -2,16 +2,16 @@ import os
 import csv
 bank_csv = os.path.join("Resources","budget_data.csv")
 
-# This script is for the "PyBank Problem" based on the Python lectures
+# THIS SCRIPT IS FOR THE "PYBANK PROBLEM" in Module #3 Homework
 
-# Read the dataset
+# READ THE DATASET 
 with open (bank_csv, encoding='utf-8') as csv_file:
     csv_read = csv.reader(csv_file, delimiter=",")
     
-    # Skip the header row
+    # SKIP the HEADER ROW
     next(csv_read, None)
     
-    # Initialize variables
+    # INITIALIZE VARIABLES
     total_months = 0
     total_profit_losses = 0
     previous_profit_loss = 0
@@ -20,11 +20,11 @@ with open (bank_csv, encoding='utf-8') as csv_file:
     
     # Read through (Loop) the rows in the dataset
     for row in csv_read:
-        # Calculate total months and total profit/losses
+        # Calculate TOTAL MONTHS and TOTAL PROFIS/LOSSES
         total_months += 1
         total_profit_losses += int(row[1])
         
-        # Calculate profit/losses changes
+        # Calculate PROFIT/LOSSES changes
         profit_loss_change = int(row[1]) - previous_profit_loss
         profit_losses_changes.append(profit_loss_change)
         dates.append(row[0])
