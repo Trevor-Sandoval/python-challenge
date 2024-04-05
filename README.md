@@ -2,22 +2,17 @@
 
 
 PART 1.) PyBank Instructions
- 
-   In this Challenge, you are tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
+In this Challenge, you are tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
 
    Your task is to create a Python script that analyzes the records to calculate each of the following values:
    
    The total number of months included in the dataset
-
    The net total amount of "Profit/Losses" over the entire period
-
    The changes in "Profit/Losses" over the entire period, and then the average of those changes
-
    The greatest increase in profits (date and amount) over the entire period
-
    The greatest decrease in profits (date and amount) over the entire period
- 
    Your analysis should align with the following results:
+
 
 Financial Analysis
 ----------------------------
@@ -28,7 +23,7 @@ Greatest Increase in Profits: Aug-16 ($1862002)
 Greatest Decrease in Profits: Feb-14 ($-1825558)
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-Steps:
+Workflow:
 - read csv files with python script.
 - define lists to store data
 - loop - do all calculations
@@ -41,20 +36,17 @@ Steps:
 
 PART 2.) PyPoll Instructions
 In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
+You will be given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". 
 
-You will be given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following values:
+Your task is to create a Python script that analyzes the votes and calculates each of the following values:
 
 The total number of votes cast
-
 A complete list of candidates who received votes
-
 The percentage of votes each candidate won
-
 The total number of votes each candidate won
-
 The winner of the election based on popular vote
-
 Your analysis should align with the following results:
+
 
 Election Results
 -------------------------
@@ -67,13 +59,17 @@ Raymon Anthony Doane: 3.139% (11606)
 Winner: Diana DeGette
 -------------------------
 
-Steps:
+
+Workflow:
 - read csv files with python script.
 - set vote counter to zero
 - define lists to store data
 - loop - do all calculations
 - print all mentioned in the problem
 - write output to csv file
+
+
+
 
 References: 
 Please note that some portions of my code's structure were inspired by my research on the internet. At the beginning of this boot camp, we were encouraged to be proactive with utilizing the internet as a resource for finding solutions to complex problems that also contributed to our edification. Thus, I was able to formulate my assignment after conducting some independent research on Stack Overflow and Google Search.
